@@ -25,10 +25,12 @@ brew "svn" # Needed to install fonts
 
 # Development
 brew "composer"
-brew "php"
 brew "mariadb"
+brew "maven"
 brew "nginx"
 brew "node"
+brew "nvm"
+brew "php"
 brew "pnpm"
 brew "yarn"
 
@@ -75,7 +77,6 @@ cask "tableplus"
 cask "telegram-desktop"
 cask "teamviewer"
 cask "vlc"
-cask "zwift"
 
 # Quicklook
 cask "apparency"
@@ -94,22 +95,22 @@ cask "webpquicklook"
 cask "font-jetbrains-mono"
 
 # Mac App Store
-mas 'Keynote', id: 409183694
-mas 'Numbers', id: 409203825
-mas 'Pages', id: 409201541
-mas 'Gifski', id: 1351639930
-mas 'Lightweight PDF', id: 1450640351
-mas 'System Designer', id: 1102494854
-mas 'AmorphousDiskMark', id: 1168254295
-mas 'Cinebench', id: 1438772273
-mas 'HEIC Converter', id: 1294126402
-mas 'Lockdown Privacy - Desktop', id: 1483255076
-mas 'Magnet', id: 441258766
-mas 'HP Easy Scan', id: 967004861
-mas 'rcmd • App Switcher', id: 1596283165
-mas 'Slack for Desktop', id: 803453959
-mas 'Spark – Email App by Readdle', id: 1176895641
-mas 'The Unarchiver', id: 425424353
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Gifski", id: 1351639930
+mas "Lightweight PDF", id: 1450640351
+mas "System Designer", id: 1102494854
+mas "AmorphousDiskMark", id: 1168254295
+mas "Cinebench", id: 1438772273
+mas "HEIC Converter", id: 1294126402
+mas "Lockdown Privacy - Desktop", id: 1483255076
+mas "Magnet", id: 441258766
+mas "HP Easy Scan", id: 967004861
+mas "rcmd • App Switcher", id: 1596283165
+mas "Slack for Desktop", id: 803453959
+mas "Spark – Email App by Readdle", id: 1176895641
+mas "The Unarchiver", id: 425424353
 
 # Manual installs
 #

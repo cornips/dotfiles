@@ -75,6 +75,15 @@ You can tweak the shell theme, the Oh My Zsh settings and much more. Go through 
 
 Enjoy your own Dotfiles!
 
+## Known issues
+
+When running `.macos` you may get a warning about `Could not write domain X; exiting`. Fix by running the following and then re-run `.macos`.
+    
+   ```zsh
+   chmod 700 ~/Library/Preferences/
+   sudo chown $(whoami) /Library/Preferences/
+   ```
+
 ## Thanks to...
 
 Thanks to [driesvints](https://github.com/driesvints/dotfiles) for his dotfiles, which I used as a starting point for this repository.
