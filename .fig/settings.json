@@ -1,0 +1,11 @@
+{
+  "app.hideMenubarIcon": false,
+  "app.preferredTerminal": "iTerm2",
+  "autocomplete.firstTokenCompletion": true,
+  "autocomplete.keybindings.enter": "insertSelected",
+  "autocomplete.keybindings.tab": "insertCommonPrefix",
+  "autocomplete.theme": "github-dark",
+  "dotfiles.beta": true,
+  "dotfiles.syncImmediately": false,
+  "integrations.experimental": true
+}
