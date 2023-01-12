@@ -7,20 +7,30 @@
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
 
-# Ask for the administrator password upfront
+# Ask for the administrator password up front
 sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+# Ask for some user input up front
+echo
+echo "What would be the name of this computer?"
+read -p "Computer name: " computername
+
+echo
+echo "Who does this computer belong to?"
+read -p "Property of: " propertyholder
+
+echo
+echo "And what is your phone number (in case of lost)?"
+read -p "Phone number: " propertyphonenumber
 
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-echo "What would be the name of this computer?"
-echo
-read -p "Computer name: " computername
 sudo scutil --set ComputerName $computername
 sudo scutil --set HostName $computername
 sudo scutil --set LocalHostName $computername
@@ -170,12 +180,13 @@ sudo pmset -a autorestart 1
 # Restart automatically if the computer freezes
 sudo systemsetup -setrestartfreeze on
 
-# Sleep the display after X minutes
-sudo pmset -a displaysleep 15
+# Sleep the display after X minutes on power
+sudo pmset -c displaysleep 10
+# Sleep the display after X minutes on battery
+sudo pmset -b displaysleep 2
 
 # Set machine sleep to 60 minutes on power
 sudo pmset -c sleep 60
-
 # Set machine sleep to 5 minutes on battery
 sudo pmset -b sleep 2
 
@@ -209,9 +220,12 @@ defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 5
 
+# Set a custom message to display when the screen is locked
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText -string "Property of $propertyholder\\nIf found please call $propertyphonenumber"
+
 # Save screenshots to the desktop
 # defaults write com.apple.screencapture location -string "${HOME}/Desktop"
-defaults write com.apple.screencapture location-last -string "~/Downloads"
+defaults write com.apple.screencapture location-last -string "${HOME}/Downloads"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 # defaults write com.apple.screencapture type -string "png"
