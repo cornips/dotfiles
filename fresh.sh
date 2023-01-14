@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env zsh
 
 echo "Setting up your Mac..."
 
@@ -15,9 +15,13 @@ if test ! $(which brew); then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
+# Symlinks some files from the .dotfiles
 rm -rf $HOME/.zshrc
-ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+for file in ".zshrc" \
+  ".mackup.cfg" \
+  ".mackup"; do
+  ln -s $HOME/.dotfiles/$file $HOME/$file
+done
 
 # Update Homebrew recipes
 brew update
@@ -41,8 +45,6 @@ mkdir $HOME/Development
 # Clone Github repositories
 $DOTFILES/clone.sh
 
-# Symlink the Mackup config file to the home directory
-ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
 
 # Set macOS preferences - we will run this last because this will reload the shell
 source $DOTFILES/.macos
