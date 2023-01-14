@@ -48,5 +48,8 @@ $DOTFILES/clone.sh
 # Run mkcert
 $DOTFILES/mkcert.sh
 
+# Import GPG keys
+gpg --import ~/Library/Mobile\ Documents/com~apple~CloudDocs/Mackup/OpenPGP\ Keys.asc
+
 # Set macOS preferences - we will run this last because this will reload the shell
 source $DOTFILES/.macos
