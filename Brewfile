@@ -29,7 +29,7 @@ brew "composer"
 brew "mariadb"
 brew "maven"
 brew "nginx"
-brew "node"
+# brew "node" # handled by nvm
 brew "nvm"
 brew "php"
 brew "pnpm"

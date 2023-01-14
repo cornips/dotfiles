@@ -119,6 +119,7 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
@@ -139,7 +140,7 @@ load-nvmrc() {
     fi
   elif [ "$node_version" != "$(nvm version system)" ]; then
     echo "Reverting to nvm system version"
-    nvm use system
+    nvm use system &> /dev/null
   fi
 }
 add-zsh-hook chpwd load-nvmrc
