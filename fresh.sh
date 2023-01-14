@@ -45,6 +45,8 @@ mkdir $HOME/Development
 # Clone Github repositories
 $DOTFILES/clone.sh
 
+# Run mkcert
+$DOTFILES/mkcert.sh
 
 # Set macOS preferences - we will run this last because this will reload the shell
 source $DOTFILES/.macos

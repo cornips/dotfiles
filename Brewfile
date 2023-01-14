@@ -20,6 +20,7 @@ brew "mas" # Mac App Store manager
 brew "mkcert"
 brew "multitail"
 brew "nano"
+brew "nss" # Needed by mkcert for Firefox support
 brew "pkg-config" # https://github.com/driesvints/dotfiles/issues/20
 brew "svn" # Needed to install fonts
 
