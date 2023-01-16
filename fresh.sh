@@ -30,6 +30,10 @@ brew update
 brew tap homebrew/bundle
 brew bundle --file $DOTFILES/Brewfile
 
+# Symlink to find Java JDK (specific for client Gopacs)
+sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk \
+     /Library/Java/JavaVirtualMachines/openjdk.jdk
+
 # Install global Composer packages
 /usr/local/bin/composer global require laravel/installer laravel/valet
 

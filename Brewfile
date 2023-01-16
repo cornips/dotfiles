@@ -24,14 +24,15 @@ brew "nss" # Needed by mkcert for Firefox support
 brew "pkg-config" # https://github.com/driesvints/dotfiles/issues/20
 brew "pygments"
 brew "svn" # Needed to install fonts
+brew "watch"
 
 # Development
 brew "composer"
 brew "mariadb"
-brew "maven"
+brew "maven" # Gopacs Client-specific
 brew "nginx"
-# brew "node" # handled by nvm
 brew "nvm"
+brew "openjdk@17" # Gopacs Client-specific
 brew "php"
 brew "pnpm"
 brew "yarn"
