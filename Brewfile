@@ -22,6 +22,7 @@ brew "multitail"
 brew "nano"
 brew "nss" # Needed by mkcert for Firefox support
 brew "pkg-config" # https://github.com/driesvints/dotfiles/issues/20
+brew "pygments"
 brew "svn" # Needed to install fonts
 
 # Development
@@ -121,3 +122,4 @@ mas "The Unarchiver", id: 425424353
 # pCloud Drive - https://www.pcloud.com/download-free-online-cloud-file-storage.html
 # HP Envy 5000 drivers - https://support.hp.com/nl-nl/drivers/selfservice/hp-envy-5000-all-in-one-printer-series/14095644
 # Clockify Time Tracker - https://clockify.me/mac-time-tracking
+# http-server - npm i -g http-server
