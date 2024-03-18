@@ -10,7 +10,9 @@ tap "homebrew/services"
 # Binaries
 brew "awscli"
 brew "ffmpeg"
+brew "fzf"
 brew "git"
+brew "gnupg" # GPG signing in Fork
 brew "grep"
 brew "htop"
 brew "httpie"
@@ -21,9 +23,11 @@ brew "mkcert"
 brew "multitail"
 brew "nano"
 brew "nss" # Needed by mkcert for Firefox support
+brew "pinentry-mac" # GPG signing in Fork
 brew "pkg-config" # https://github.com/driesvints/dotfiles/issues/20
 brew "pygments"
 brew "svn" # Needed to install fonts
+brew "telnet"
 brew "watch"
 
 # Development
@@ -44,8 +48,10 @@ cask "appcleaner"
 cask "balsamiq-wireframes"
 cask "brave-browser"
 cask "caret"
+cask "chromium"
 cask "coconutbattery"
 cask "cyberduck"
+cask "dbeaver-community"
 cask "docker"
 cask "fig"
 cask "figma"
@@ -54,7 +60,8 @@ cask "fontbase"
 cask "gpg-suite-no-mail"
 cask "grammarly-desktop"
 cask "handbrake"
-cask "helo"
+# cask "helo" # Nice but paid
+# cask "hiddenbar" # installed via mas from App Store
 cask "imageoptim"
 cask "insomnia"
 cask "iterm2"
@@ -70,6 +77,7 @@ cask "obs"
 cask "openvpn-connect"
 cask "origami-studio"
 cask "phpmon"
+cask "poedit"
 cask "postman"
 cask "principle"
 cask "shottr"
@@ -110,13 +118,14 @@ mas "System Designer", id: 1102494854
 mas "AmorphousDiskMark", id: 1168254295
 mas "Cinebench", id: 1438772273
 mas "HEIC Converter", id: 1294126402
-mas "Lockdown Privacy - Desktop", id: 1483255076
+# mas "Lockdown Privacy - Desktop", id: 1483255076
 mas "Magnet", id: 441258766
 mas "HP Easy Scan", id: 967004861
 mas "rcmd • App Switcher", id: 1596283165
 mas "Slack for Desktop", id: 803453959
 mas "Spark – Email App by Readdle", id: 1176895641
 mas "The Unarchiver", id: 425424353
+mas "Hidden Bar", id: 1452453066
 
 # Manual installs
 #

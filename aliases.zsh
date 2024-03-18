@@ -10,6 +10,9 @@ alias serve="http-server"
 ccat() {
   pygmentize -P style=monokai -g $1 | less
 }
+mov2mp4() {
+  ffmpeg -i "$1" -vcodec h264 -acodec mp2 "$(echo $1 | sed -r 's/.{3}$/mp4/')"
+}
 
 # Directories
 alias dev="cd $HOME/Development"
