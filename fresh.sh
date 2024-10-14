@@ -34,15 +34,6 @@ brew bundle --file $DOTFILES/Brewfile
 sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk \
      /Library/Java/JavaVirtualMachines/openjdk.jdk
 
-# Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/valet
-
-# Install Laravel Valet
-$HOME/.composer/vendor/bin/valet install
-
-# Create a Sites directory
-mkdir $HOME/Sites
-
 # Create a Development directory
 mkdir $HOME/Development
 

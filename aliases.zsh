@@ -7,6 +7,7 @@ alias ssh-heldro="ssh -t -i ~/.ssh/id_ed25519 heldro@verkoop.heldro.nl 'cd \/hom
 alias ssh-server1="ssh -t -i ~/.ssh/id_ed25519 mcornips@server1.cornipshosting.nl -p 61619 'cd \/home\/mcornips\/html && exec \$SHELL -l'"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias serve="http-server"
+alias checkjson="python3 -m json.tool"
 
 # Functions
 ccat() {
@@ -35,7 +36,6 @@ portcheck() {
 # Directories
 alias dev="cd $HOME/Development"
 alias dotfiles="cd $DOTFILES"
-alias sites="cd $HOME/Sites"
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"

@@ -118,8 +118,7 @@ mas "System Designer", id: 1102494854
 mas "AmorphousDiskMark", id: 1168254295
 mas "Cinebench", id: 1438772273
 mas "HEIC Converter", id: 1294126402
-# mas "Lockdown Privacy - Desktop", id: 1483255076
-mas "Magnet", id: 441258766
+# mas "Magnet", id: 441258766 # replaced by macOS Sequoia built-in window management
 mas "HP Easy Scan", id: 967004861
 mas "rcmd • App Switcher", id: 1596283165
 mas "Slack for Desktop", id: 803453959
