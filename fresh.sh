@@ -17,9 +17,7 @@ fi
 
 # Symlinks some files from the .dotfiles
 rm -rf $HOME/.zshrc
-for file in ".zshrc" \
-  ".mackup.cfg" \
-  ".mackup"; do
+for file in ".zshrc"; do
   ln -s $HOME/.dotfiles/$file $HOME/$file
 done
 
@@ -37,14 +35,8 @@ sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk \
 # Create a Development directory
 mkdir $HOME/Development
 
-# Clone Github repositories
-$DOTFILES/clone.sh
-
 # Run mkcert
 $DOTFILES/mkcert.sh
-
-# Import GPG keys
-gpg --import ~/Library/Mobile\ Documents/com~apple~CloudDocs/Mackup/OpenPGP\ Keys.asc
 
 # Set macOS preferences - we will run this last because this will reload the shell
 source $DOTFILES/.macos

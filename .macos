@@ -290,9 +290,9 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 defaults write com.apple.finder SidebarWidth -int 139
 
 # Finder: enable iCloud drive for documents and desktop
-defaults write com.apple.finder FXICloudDriveEnabled -bool true
-defaults write com.apple.finder FXICloudDriveDesktop -bool true
-defaults write com.apple.finder FXICloudDriveDocuments -bool true
+#defaults write com.apple.finder FXICloudDriveEnabled -bool true
+#defaults write com.apple.finder FXICloudDriveDesktop -bool true
+#defaults write com.apple.finder FXICloudDriveDocuments -bool true
 
 # Finder: show iCloud in sidebar
 defaults write com.apple.finder SidebarShowingSignedIntoiCloud -bool true
@@ -382,39 +382,8 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
 
-defaults write com.apple.dock persistent-apps -array
-defaults write com.apple.dock persistent-others -array
-
-# Dock Apps list
-List=( "/Applications/Brave Browser.app" \
-        "/Applications/Spark.app" \
-        "/System/Applications/Calendar.app" \
-        "/Applications/Microsoft Teams.app" \
-        "/Applications/Slack.app" \
-        "/Applications/Telegram Lite.app" \
-        "/System/Applications/Notes.app" \
-        "/Applications/Notion.app" \
-        "/System/Applications/Reminders.app" \
-        "/Applications/iTerm.app" \
-#        "/Applications/PhpStorm.app" \ Handled via toolbox
-        "/Applications/Dev/Fork.app" )
-
-for App in "${List[@]}"; do
-    if [ -d "${App}" ]; then
-        defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>${App}</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
-    fi
-done
-
-# Dock Folders list
-List=( "/Applications/Dev" \
-        "/Applications/Design" \
-        "/Users/martijn/Downloads" )
-
-for Folder in "${List[@]}"; do
-    if [ -d "${Folder}" ]; then
-        defaults write com.apple.dock persistent-others -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>${Folder}</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
-    fi
-done
+#defaults write com.apple.dock persistent-apps -array
+#defaults write com.apple.dock persistent-others -array
 
 # Enable highlight hover effect for the grid view of a stack (Dock)
 # defaults write com.apple.dock mouse-over-hilite-stack -bool true
