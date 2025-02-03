@@ -116,11 +116,6 @@ export EDITOR='nano'
 # yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-# Java (OpenJDK 21 specific-for-client: EDSN GOPACS)
-export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"
-export CPPFLAGS="-I/opt/homebrew/opt/openjdk@21/include"
-export JAVA_HOME=`/usr/libexec/java_home -v 21`
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # nvm

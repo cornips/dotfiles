@@ -33,10 +33,8 @@ brew "watch"
 # Development
 brew "composer"
 brew "mariadb"
-brew "maven" # specific-for-client: EDSN GOPACS
 brew "nginx"
 brew "nvm"
-brew "openjdk@21" # specific-for-client: EDSN GOPACS
 brew "php"
 brew "pnpm"
 brew "yarn"
