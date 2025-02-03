@@ -11,7 +11,8 @@ ssh-keygen -t ed25519 -C $1 -f ~/.ssh/id_ed25519
 eval "$(ssh-agent -s)"
 
 touch ~/.ssh/config
-echo "Host server1.cornipshosting.nl\n Port 61619\n\nHost *\n AddKeysToAgent yes\n UseKeychain yes\n IdentityFile ~/.ssh/id_ed25519\n\n# Fig ssh integration. Keep at the bottom of this file.\nMatch all\n  Include ~/.fig/ssh" | tee ~/.ssh/config > /dev/null
+echo "Host server1.cornipshosting.nl\n Port 61619\n\n" | tee ~/.ssh/config > /dev/null
+echo "Host *\n AddKeysToAgent yes\n UseKeychain yes\n IdentityFile ~/.ssh/id_ed25519" | tee ~/.ssh/config > /dev/null
 
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 

@@ -3,12 +3,12 @@
 echo "Setting up your Mac..."
 
 # Check for Oh My Zsh and install if we don't have it
-if test ! $(which omz); then
+if ! command -v omz &> /dev/null; then
   /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
 fi
 
 # Check for Homebrew and install if we don't have it
-if test ! $(which brew); then
+if ! command -v brew &> /dev/null; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
   echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
@@ -23,6 +23,9 @@ for file in ".zshrc" \
   ln -s $HOME/.dotfiles/$file $HOME/$file
 done
 
+# set DOTFILES home for current session
+export DOTFILES=$HOME/.dotfiles
+
 # Update Homebrew recipes
 brew update
 
@@ -30,7 +33,7 @@ brew update
 brew tap homebrew/bundle
 brew bundle --file $DOTFILES/Brewfile
 
-# Symlink to find Java JDK (specific for client Gopacs)
+# Symlink to find Java JDK (specific-for-client: EDSN GOPACS)
 sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk \
      /Library/Java/JavaVirtualMachines/openjdk.jdk
 
