@@ -67,7 +67,7 @@ cask "jetbrains-toolbox"
 cask "libreoffice"
 cask "lunar"
 cask "mongodb-compass"
-cask "microsoft-teams"
+cask "microsoft-teams" # client-specific Sonic
 cask "microsoft-office"
 cask "miro"
 cask "netspot"
@@ -89,6 +89,7 @@ cask "tableplus"
 cask "telegram-desktop"
 cask "teamviewer"
 cask "vlc"
+cask "zeplin" # client-specific Sonic
 
 # Quicklook
 cask "apparency"
