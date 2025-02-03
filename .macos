@@ -68,7 +68,7 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
 # Show VPN status in menu bar
 defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/VPN.menu"
-defaults read com.apple.networkConnect VPNShowStatus -bool true
+defaults write com.apple.networkConnect VPNShowStatus -bool true
 
 # Save to disk (not to iCloud) by default
 # defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
