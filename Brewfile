@@ -62,6 +62,7 @@ cask "handbrake"
 # cask "hiddenbar" # installed via mas from App Store
 cask "imageoptim"
 cask "insomnia"
+cask "instantview" # client-specific Sonic
 cask "iterm2"
 cask "jetbrains-toolbox"
 cask "libreoffice"
