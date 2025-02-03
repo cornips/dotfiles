@@ -14,5 +14,3 @@ git clone git@github.com:flobro/flobro-app.git $DEVELOPMENT/flobro/flobro-app
 
 # Clients
 git clone git@bitbucket.org:cornips/heldro-verkoop.git $DEVELOPMENT/heldro-verkoop
-git clone git@gitlab.com:gopacs/idcons.git $DEVELOPMENT/gopacs/idcons
-git clone git@gitlab.com:gopacs/idcons.git $DEVELOPMENT/gopacs/idcons-debug

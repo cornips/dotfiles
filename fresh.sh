@@ -33,14 +33,6 @@ brew update
 brew tap homebrew/bundle
 brew bundle --file $DOTFILES/Brewfile
 
-# Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/valet
-
-# Install Laravel Valet
-$HOME/.composer/vendor/bin/valet install
-
-# Create a Sites directory
-mkdir $HOME/Sites
 
 # Create a Development directory
 mkdir $HOME/Development
