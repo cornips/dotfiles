@@ -1,8 +1,6 @@
 # Taps
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-versions"
-tap "homebrew/core"
 tap "homebrew/cask-fonts"
 tap "nicoverbruggen/homebrew-cask"
 tap "homebrew/services"
@@ -29,6 +27,7 @@ brew "pygments"
 brew "svn" # Needed to install fonts
 brew "telnet"
 brew "watch"
+brew "yt-dlp" # Download m3u streams
 
 # Development
 brew "composer"
@@ -55,6 +54,7 @@ cask "docker"
 cask "figma"
 cask "firefox-developer-edition"
 cask "fontbase"
+cask "fork"
 cask "gpg-suite-no-mail"
 cask "grammarly-desktop"
 cask "handbrake"
@@ -68,6 +68,7 @@ cask "libreoffice"
 cask "lunar"
 cask "mongodb-compass"
 cask "microsoft-teams"
+cask "microsoft-office"
 cask "miro"
 cask "netspot"
 cask "notion"
