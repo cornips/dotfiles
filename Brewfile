@@ -71,6 +71,7 @@ cask "miro"
 cask "netspot"
 cask "notion"
 cask "obs"
+cask "opencode-desktop"
 cask "origami-studio"
 cask "phpmon" # from tap nicoverbruggen/homebrew-cask
 cask "poedit"
