@@ -122,6 +122,7 @@ mas "Slack for Desktop", id: 803453959
 mas "Spark – Email App by Readdle", id: 1176895641
 mas "The Unarchiver", id: 425424353
 mas "Hidden Bar", id: 1452453066
+mas "Pelican - Clipboard Manager", id: 1524721688
 
 # Manual installs
 #
