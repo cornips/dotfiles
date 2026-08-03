@@ -62,14 +62,11 @@ cask "handbrake"
 # cask "hiddenbar" # installed via mas from App Store
 cask "imageoptim"
 cask "insomnia"
-cask "instantview" # client-specific Sonic
 cask "iterm2"
 cask "jetbrains-toolbox"
 cask "libreoffice"
 cask "lunar"
 cask "mongodb-compass"
-cask "microsoft-teams" # client-specific Sonic
-cask "microsoft-office"
 cask "miro"
 cask "netspot"
 cask "notion"
@@ -90,7 +87,6 @@ cask "tableplus"
 cask "telegram-desktop"
 cask "teamviewer"
 cask "vlc"
-cask "zeplin" # client-specific Sonic
 
 # Quicklook
 cask "apparency"
