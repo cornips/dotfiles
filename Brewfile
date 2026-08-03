@@ -1,8 +1,7 @@
 # Taps
 tap "homebrew/bundle"
-tap "homebrew/cask-versions"
-tap "homebrew/cask-fonts"
-tap "nicoverbruggen/homebrew-cask"
+tap "nicoverbruggen/homebrew-cask" # for phpmon
+tap "flobro/tap" # for flobro
 tap "homebrew/services"
 
 # Binaries
@@ -51,6 +50,7 @@ cask "dbeaver-community"
 cask "docker"
 cask "figma"
 cask "firefox-developer-edition"
+cask "flobro" # from tap flobro/tap
 cask "fontbase"
 cask "fork"
 cask "gpg-suite-no-mail"
@@ -71,7 +71,7 @@ cask "notion"
 cask "obs"
 cask "openvpn-connect"
 cask "origami-studio"
-cask "phpmon"
+cask "phpmon" # from tap nicoverbruggen/homebrew-cask
 cask "poedit"
 cask "postman"
 cask "principle"
