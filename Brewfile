@@ -44,6 +44,8 @@ cask "appcleaner"
 cask "brave-browser"
 cask "caret"
 cask "chromium"
+cask "claude" # Claude desktop app
+cask "claude-code" # Claude Code CLI
 cask "coconutbattery"
 cask "cyberduck"
 cask "dbeaver-community"
